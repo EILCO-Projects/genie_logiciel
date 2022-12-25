@@ -1,0 +1,29 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 23 Dec 2022 15:42:48 at https://udemo-html.netlify.app/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "fr, en, *" https://udemo-html.netlify.app/index.html -O1 "C:\Users\DR DREE INFO\Desktop\TATSI1" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:47:16	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/demo_assets/images/demo/demo_home_v1.jpg (from https://udemo-html.netlify.app/index.html)
+15:56:40	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/blog.html (from https://udemo-html.netlify.app/index.html)
+15:56:57	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/event_details.html (from https://udemo-html.netlify.app/index.html)
+15:56:57	Warning: 	Retry after error -4 (No data (connection closed)) at link https://udemo-html.netlify.app/assets/images/icons/icon_video_tutorial.png (from https://udemo-html.netlify.app/index_5.html)
+15:56:57	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/assets/images/icons/icon_briefcase.png (from https://udemo-html.netlify.app/index_5.html)
+15:56:58	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/assets/images/course/course_img_4.jpg (from https://udemo-html.netlify.app/index_5.html)
+15:57:00	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/assets/images/course/course_img_7.jpg (from https://udemo-html.netlify.app/index_5.html)
+15:57:01	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/assets/images/shapes/dot_shape_4.png (from https://udemo-html.netlify.app/index_5.html)
+15:57:01	Warning: 	Retry after error -4 (No data (connection closed)) at link https://udemo-html.netlify.app/assets/images/shapes/shape_4.png (from https://udemo-html.netlify.app/index_5.html)
+15:57:03	Warning: 	Retry after error -4 (No data (connection closed)) at link https://udemo-html.netlify.app/assets/images/logo/site_logo_white.png (from https://udemo-html.netlify.app/index_5.html)
+15:57:04	Warning: 	Retry after error -2 (Receive Time Out) at link https://udemo-html.netlify.app/assets/images/banner/banner_img_4.png (from https://udemo-html.netlify.app/index_2.html)
+15:57:06	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/assets/images/meta/thumbnail_img_1.png (from https://udemo-html.netlify.app/index_2.html)
+15:57:06	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/assets/images/shapes/shape_9.png (from https://udemo-html.netlify.app/index_2.html)
+15:57:07	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/assets/images/shapes/shape_10.png (from https://udemo-html.netlify.app/index_2.html)
+15:57:10	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/assets/images/events/event_img_1.png (from https://udemo-html.netlify.app/index_2.html)
+15:57:10	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/assets/images/events/event_img_2.png (from https://udemo-html.netlify.app/index_2.html)
+15:57:14	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/assets/images/about/about_img_2.jpg (from https://udemo-html.netlify.app/about.html)
+15:57:15	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://udemo-html.netlify.app/assets/images/icons/icon_email.png (from https://udemo-html.netlify.app/contact.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 14 minutes 42 seconds : 230 links scanned, 211 files written (13360618 bytes overall) [11535028 bytes received at 13078 bytes/sec], 2324153 bytes transferred using HTTP compression in 46 files, ratio 17%
+(No errors, 18 warnings, 0 messages)
