@@ -1,0 +1,112 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+//Utilisateurs
+model User {
+  id              Int               @id @default(autoincrement())
+  nom             String
+  prenom          String
+  email           String           @unique
+  password        String
+  phone           String?
+  age             Int?
+  prefession      String?
+  niveau          Niveau?
+  role            Role              @default(BASIC)
+  tests           UserTest[] //les tests passés (trouvable dan l'attribut test de chaque UserTest)
+  listVocabulaires ListVocabulaire[]
+}
+
+// Les tests toeic
+model Test {
+  id      Int        @id @default(autoincrement())
+  nom     String
+  numero  Int?
+  annee   Int?
+  users   UserTest[] // ceux qui ont déjà passé ce test (trouvable dan l'attribut user de chaque UserTest)
+  parties Partie[]
+}
+
+//Les différentes parties du test
+model Partie {
+  id         Int      @id @default(autoincrement())
+  type       TypePartie
+  numero     Int
+  directions String //descriptif
+  questions  Json
+  tests      Test[] // on se permet d'utiliser la même partie dans plusieurs tests  (many to many relation)
+}
+
+//Gestion des tests utilisateur
+model UserTest {
+  id       Int      @id @default(autoincrement())
+  user     User     @relation(fields: [userId], references: [id])
+  userId   Int
+  test     Test     @relation(fields: [testId], references: [id])
+  testId   Int
+  etat     EtatTest @default(NONFINI)
+  score    Int
+  niveau   Niveau
+  reponses Json
+}
+
+//Liste de vocabulaires
+model ListVocabulaire {
+  id           Int           @id @default(autoincrement())
+  nom          String
+  vocabulaires Vocabulaire[]
+  userId       Int
+  user         User          @relation(fields: [userId], references: [id])
+}
+
+model Vocabulaire {
+  id         Int             @id @default(autoincrement())
+  mot        String
+  traduction String
+  note       String
+  list       ListVocabulaire @relation(fields: [listId], references: [id])
+  listId     Int
+}
+
+//Gestion des rôles
+enum Role {
+  BASIC
+  ADMIN
+}
+
+
+//Type de partie 1 à 7
+enum TypePartie {
+  ORAL_P1
+  ORAL_P2
+  ORAL_P3
+  ORAL_P4
+  ECRIT_P5
+  ECRIT_P6
+  ECRIT_P7
+}
+
+enum EtatTest {
+  FINI
+  NONFINI
+}
+
+
+//Niveau toeic
+enum Niveau {
+  A1
+  A2
+  B1
+  B2
+  C1
+  C2
+}
