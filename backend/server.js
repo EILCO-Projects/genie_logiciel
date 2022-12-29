@@ -6,11 +6,19 @@ import cors from "cors"
 import usersRouter from "./src/routes/users.route.js"
 import testsRouter from "./src/routes/tests.route.js";
 import partiesRouter from "./src/routes/parties.route.js";
-
+import path from "path"
+import {fileURLToPath} from 'url';
 
 import dotenv from 'dotenv';
 import authRouter from "./src/auth/auth.route.js";
 import { ensureAuthantication } from "./src/auth/auth.middleware.js";
+import frontendRouter from "./src/routes/frontend.route.js"
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
+
 
 const app = express()
 
@@ -31,18 +39,16 @@ app.use(session({
     store : store
 }))
 
+//dossier build du frontend
+app.use(express.static(path.join(__dirname, '../frontend/build')));
+
+
 app.use(cors())
 
-app.get("/",(req,res)=>{
-    res.send("salut")
-})
+
 
 app.get("/protected", ensureAuthantication,(req,res)=>{
     res.send("You have access")
-})
-
-app.get("/login",(req,res)=>{
-    res.send("login form")
 })
 
 app.use('/auth/',authRouter)
@@ -51,6 +57,8 @@ app.use('/api/users/',usersRouter)
 app.use('/api/tests/',testsRouter)
 app.use('/api/parties/',partiesRouter)
 
+//frontend
+app.use('/',frontendRouter)
 
 app.listen(process.env.PORT,process.env.HOST,()=>{
     console.log("Le server écoute sur le port ",process.env.PORT)

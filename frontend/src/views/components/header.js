@@ -5,7 +5,7 @@ export default function Header() {
         <div class="row align-items-center">
           <div class="col col-lg-3 col-6">
             <div class="site_logo">
-              <a class="site_link" href="index.html">
+              <a class="site_link" href="/">
                 <img
                   src="assets/images/logo/site_logo.png"
                   alt="Education, Online Course, LMS Creative"
@@ -32,7 +32,7 @@ export default function Header() {
               >
                 <ul class="main_menu_list unordered_list_center">
                   <li class="active">
-                    <a class="nav-link" href="#!">
+                    <a class="nav-link" href="/">
                       Accueil
                     </a>
                   </li>
@@ -49,24 +49,24 @@ export default function Header() {
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="pages_submenu">
                       <li>
-                        <a href="instructor.html">PART 1 : Photos</a>
+                        <a href="#">PART 1 : Photos</a>
                       </li>
                       <li>
-                        <a href="membership.html">PART 2 : /R</a>
+                        <a href="#">PART 2 : /R</a>
                       </li>
                       <li>
-                        <a href="event_details.html">PART 3 : Conversations</a>
+                        <a href="#">PART 3 : Conversations</a>
                       </li>
                       <li>
-                        <a href="instructor.html">PART 4 : Shorts Talks</a>
+                        <a href="#">PART 4 : Shorts Talks</a>
                       </li>
                       <li>
-                        <a href="membership.html">
+                        <a href="#">
                           PART 5 : Incomplete Sentences
                         </a>
                       </li>
                       <li>
-                        <a href="event_details.html">
+                        <a href="#">
                           PART 6 : Text completion
                         </a>
                       </li>
@@ -111,10 +111,10 @@ export default function Header() {
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="pages_submenu">
                       <li>
-                        <a href="instructor.html">TOEIC Listening Tips</a>
+                        <a href="">TOEIC Listening Tips</a>
                       </li>
                       <li>
-                        <a href="instructor.html">TOEIC Reading Tips</a>
+                        <a href="">TOEIC Reading Tips</a>
                       </li>
                     </ul>
                   </li>
@@ -156,10 +156,10 @@ export default function Header() {
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="pages_submenu">
                     <li>
-                      <a href="instructor.html">Mes tests</a>
+                      <a href="">Mes tests</a>
                     </li>
                     <li>
-                      <a href="instructor.html">Compte</a>
+                      <a href="">Compte</a>
                     </li>
                   </ul>
                 </li>

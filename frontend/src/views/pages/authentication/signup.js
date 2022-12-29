@@ -5,7 +5,7 @@ export default function Signup() {
         <div class="container text-center">
           <h1 class="page_heading mb-2">Je m'inscris</h1>
           <p class="mb-0">
-            Déjà inscrit ? <a href="#!">Je me connecte</a>
+            Déjà inscrit ? <a href="/login">Je me connecte</a>
           </p>
         </div>
         <div

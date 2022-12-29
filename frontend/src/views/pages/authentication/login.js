@@ -68,7 +68,7 @@ export default function Login() {
                     <i class="fal fa-paper-plane ms-2"></i>
                   </button>
                   <p class="mb-0 text-center">
-                    Pas encore de compte ? <a href="#!">Je m'inscris</a>
+                    Pas encore de compte ? <a href="/signup">Je m'inscris</a>
                   </p>
                 </div>
               </form>
