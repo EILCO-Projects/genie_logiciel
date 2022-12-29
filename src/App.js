@@ -1,12 +1,12 @@
 import Header from "./views/components/header";
 import Footer from "./views/components/footer";
-import Home from "./views/pages/users/home";
+import Vocabulary from "./views/pages/users/vocabulary/vocabulary"
 
 function App() {
   return (
     <div>
       <Header />
-      <Home />
+      <Vocabulary />
       <Footer />
     </div>
   );

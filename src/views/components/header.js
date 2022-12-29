@@ -118,7 +118,7 @@ export default function Header() {
                       </li>
                     </ul>
                   </li>
-                  <li class="active">
+                  <li class="">
                     <a class="nav-link" href="#!">
                       Test
                     </a>
@@ -141,15 +141,27 @@ export default function Header() {
                     <i class="far fa-bars"></i>
                   </button>
                 </li>
-                <li>
+                <li class="dropdown">
                   <a
                     data-magnetic
                     data-cursor="-opaque"
-                    class="login_btn"
-                    href="login.html"
+                    class="nav-link login_btn"
+                    href=""
+                    id="pages_submenu"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
                     <i class="far fa-user"></i>
                   </a>
+                  <ul class="dropdown-menu" aria-labelledby="pages_submenu">
+                    <li>
+                      <a href="instructor.html">Mes tests</a>
+                    </li>
+                    <li>
+                      <a href="instructor.html">Compte</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </nav>
