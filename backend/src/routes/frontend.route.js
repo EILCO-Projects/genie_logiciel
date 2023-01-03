@@ -3,7 +3,7 @@ import express from 'express'
 import path from "path"
 import { fileURLToPath } from 'url';
 
-import { ensureAuthorization } from '../security/security.middleware.js'
+import { ensureAuthantication} from '../auth/auth.middleware.js'
 
 
 const __filename = fileURLToPath(import.meta.url);
@@ -17,8 +17,8 @@ const frontendRouter = express.Router()
 frontendRouter.get('/', frontendCallback)
 frontendRouter.get('/login', frontendCallback)
 frontendRouter.get('/signin', frontendCallback)
-frontendRouter.get('/user/', frontendCallback)
-frontendRouter.get('/user/profile', frontendCallback)
+frontendRouter.get('/user/',ensureAuthantication, frontendCallback)
+frontendRouter.get('/user/profile',ensureAuthantication, frontendCallback)
 frontendRouter.get('*', frontendCallback)
 
 export default frontendRouter

@@ -1,3 +1,4 @@
+
 export default function Footer() {
   return (
     <footer class="site_footer">
@@ -8,7 +9,7 @@ export default function Footer() {
               <div class="site_logo">
                 <a class="site_link" href="index.html">
                   <img
-                    src="assets/images/logo/site_logo_white.png"
+                    src="/assets/images/logo/site_logo_white.png"
                     alt="Education, Online Course, LMS Creative"
                   />
                 </a>
@@ -86,13 +87,13 @@ export default function Footer() {
                 <ul class="store_btns unordered_list_block">
                   <li>
                     <a href="https://www.apple.com/app-store/" target="_blank">
-                      <img src="assets/images/app_store.png" alt="App Store" />
+                      <img src="/assets/images/app_store.png" alt="App Store" />
                     </a>
                   </li>
                   <li>
                     <a href="https://play.google.com/store/" target="_blank">
                       <img
-                        src="assets/images/google_play.png"
+                        src="/assets/images/google_play.png"
                         alt="Google Play"
                       />
                     </a>

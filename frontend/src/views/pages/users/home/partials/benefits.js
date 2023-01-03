@@ -7,7 +7,7 @@ export default function Benefits() {
             <div class="policy_item">
               <div class="item_icon">
                 <img
-                  src="assets/images/icons/icon_online_education_2.png"
+                  src="/assets/images/icons/icon_online_education_2.png"
                   alt="Icon Online Education"
                 />
               </div>
@@ -22,7 +22,7 @@ export default function Benefits() {
             <div class="policy_item">
               <div class="item_icon">
                 <img
-                  src="assets/images/icons/icon_globe.png"
+                  src="/assets/images/icons/icon_globe.png"
                   alt="Icon Globe"
                 />
               </div>
@@ -37,7 +37,7 @@ export default function Benefits() {
             <div class="policy_item">
               <div class="item_icon">
                 <img
-                  src="assets/images/icons/icon_online_education_1.png"
+                  src="/assets/images/icons/icon_online_education_1.png"
                   alt="Icon Online Education"
                 />
               </div>
@@ -53,19 +53,19 @@ export default function Benefits() {
         class="deco_item deco_img_1"
         data-parallax='{"rotateZ" : 180, "smoothness": 6}'
       >
-        <img src="assets/images/shapes/shape_7.png" alt="Shape Image" />
+        <img src="/assets/images/shapes/shape_7.png" alt="Shape Image" />
       </div>
       <div
         class="deco_item deco_img_2"
         data-parallax='{"y" : -130, "smoothness": 6}'
       >
-        <img src="assets/images/shapes/shape_8.png" alt="Shape Image" />
+        <img src="/assets/images/shapes/shape_8.png" alt="Shape Image" />
       </div>
       <div
         class="deco_item deco_img_3"
         data-parallax='{"x" : -130, "smoothness": 6}'
       >
-        <img src="assets/images/shapes/dot_shape_6.png" alt="Shape Image" />
+        <img src="/assets/images/shapes/dot_shape_6.png" alt="Shape Image" />
       </div>
     </section>
   );

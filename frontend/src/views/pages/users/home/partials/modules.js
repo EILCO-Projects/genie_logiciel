@@ -33,7 +33,7 @@ export default function Modules() {
                     <a class="image_wrap" href="course_details.html">
                       <img
                         style={{ height: "200px" }}
-                        src="assets/images/course/course_img_1.jpg"
+                        src="/assets/images/course/course_img_1.jpg"
                         alt=""
                       />
                     </a>
@@ -64,7 +64,7 @@ export default function Modules() {
                     <a class="image_wrap" href="course_details.html">
                       <img
                         style={{ height: "200px" }}
-                        src="assets/images/course/course_img_2.jpg"
+                        src="/assets/images/course/course_img_2.jpg"
                         alt=""
                       />
                     </a>
@@ -95,7 +95,7 @@ export default function Modules() {
                     <a class="image_wrap" href="course_details.html">
                       <img
                         style={{ height: "200px" }}
-                        src="assets/images/course/course_img_3.jpg"
+                        src="/assets/images/course/course_img_3.jpg"
                         alt=""
                       />
                     </a>
@@ -126,7 +126,7 @@ export default function Modules() {
                     <a class="image_wrap" href="course_details.html">
                       <img
                         style={{ height: "200px" }}
-                        src="assets/images/course/course_img_4.jpg"
+                        src="/assets/images/course/course_img_4.jpg"
                         alt=""
                       />
                     </a>
@@ -180,7 +180,7 @@ export default function Modules() {
                     <a class="image_wrap" href="course_details.html">
                       <img
                         style={{ height: "200px" }}
-                        src="assets/images/course/course_img_5.jpg"
+                        src="/assets/images/course/course_img_5.jpg"
                         alt=""
                       />
                     </a>
@@ -210,7 +210,7 @@ export default function Modules() {
                     <a class="image_wrap" href="course_details.html">
                       <img
                         style={{ height: "200px" }}
-                        src="assets/images/course/course_img_6.jpg"
+                        src="/assets/images/course/course_img_6.jpg"
                         alt=""
                       />
                     </a>
@@ -240,7 +240,7 @@ export default function Modules() {
                     <a class="image_wrap" href="course_details.html">
                       <img
                         style={{ height: "200px" }}
-                        src="assets/images/course/course_img_7.jpg"
+                        src="/assets/images/course/course_img_7.jpg"
                         alt=""
                       />
                     </a>

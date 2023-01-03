@@ -2152,6 +2152,7 @@ input[type=search]::-webkit-search-results-decoration {
 ================================================== */
 /* Template Sidebar - Start
 ================================================== */
+/*
 .sidebar {
   margin-left: -30px;
 }
@@ -2195,7 +2196,7 @@ input[type=search]::-webkit-search-results-decoration {
   width: 34px;
   height: 34px;
   font-size: 14px;
-}
+}*/
 
 /* Template Sidebar - End
 ================================================== */

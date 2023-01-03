@@ -7,11 +7,11 @@ export default function Greetings() {
             <div
               class="banner_image_2"
               style={{
-                backgroundImage: "url('assets/images/shapes/shape_6.png')",
+                backgroundImage: "url('/assets/images/shapes/shape_6.png')",
               }}
             >
               <img
-                src="assets/images/banner/banner_img_4.png"
+                src="/assets/images/banner/banner_img_4.png"
                 alt="Person Image"
               />
             </div>

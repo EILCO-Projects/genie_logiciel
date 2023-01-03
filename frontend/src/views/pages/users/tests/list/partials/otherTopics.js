@@ -1,91 +1,56 @@
 export default function OtherTopics() {
   return (
-    <ul class="tabs_nav nav unordered_list_end" role="tablist">
+    <ul class="tabs_nav nav unordered_list_center" role="tablist">
       <li role="presentation">
         <button
           class="active"
           data-bs-toggle="tab"
-          data-bs-target="#tab_javascript"
+          data-bs-target="#tab_tt"
           type="button"
           role="tab"
           aria-selected="true"
           data-magnetic
         >
-          Photographs
+          Tests terminés
         </button>
       </li>
       <li role="presentation">
         <button
           data-bs-toggle="tab"
-          data-bs-target="#tab_python"
+          data-bs-target="#tab_tnt"
           type="button"
           role="tab"
           aria-selected="false"
           data-magnetic
         >
-          Questions/Responses
+         Tests non terminés
         </button>
       </li>
       <li role="presentation">
         <button
           data-bs-toggle="tab"
-          data-bs-target="#tab_web_development"
+          data-bs-target="#tab_tnc"
           type="button"
           role="tab"
           aria-selected="false"
           data-magnetic
         >
-          Short Conversations
+          Tests non commencés
         </button>
       </li>
       <li role="presentation">
         <button
           data-bs-toggle="tab"
-          data-bs-target="#tab_art_design"
+          data-bs-target="#tab_v"
           type="button"
           role="tab"
           aria-selected="false"
           data-magnetic
         >
-          Short Talks
+          Vocabulaires
         </button>
       </li>
-      <li role="presentation">
-        <button
-          data-bs-toggle="tab"
-          data-bs-target="#tab_business"
-          type="button"
-          role="tab"
-          aria-selected="false"
-          data-magnetic
-        >
-          Incompletes Sentences
-        </button>
-      </li>
-      <li role="presentation">
-        <button
-          data-bs-toggle="tab"
-          data-bs-target="#tab_business"
-          type="button"
-          role="tab"
-          aria-selected="false"
-          data-magnetic
-        >
-          Text Completion
-        </button>
-      </li>{" "}
-      <li role="presentation">
-        <button
-          data-bs-toggle="tab"
-          data-bs-target="#tab_business"
-          type="button"
-          role="tab"
-          aria-selected="false"
-          data-magnetic
-        >
-          Reading Comprehension
-        </button>
-      </li>
+      
     </ul>
   );
 }

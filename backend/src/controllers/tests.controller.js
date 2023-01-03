@@ -6,7 +6,10 @@ const prisma = new PrismaClient()
 
 const getTests = async (req, res) => {
     try {
-        const tests = await prisma.test.findMany();
+        const tests = await prisma.test.findMany({ include: {
+            parties: true,
+            users: true
+        }});
         return res.status(200).json(tests);
     } catch (e) {
         return res.status(400).json({ status: 400, message: e.message });

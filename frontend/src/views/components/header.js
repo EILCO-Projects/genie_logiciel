@@ -1,4 +1,24 @@
+import UserSession from "../pages/authentication/UserSession";
+import axios from 'axios'
+import { useState } from "react";
+import {Navigate} from 'react-router-dom'
 export default function Header() {
+  const [redirect, setRedirect] = useState({ state: false, to: "/" })
+
+  const user = UserSession.getUser()
+  const logout= async (e)=>{
+      e.preventDefault();
+      const r = await axios.post("http://localhost:8000/auth/logout")
+      if(!r.data.auth){
+        UserSession.removeUser()
+        setRedirect({state:true,to:"/",})
+      }
+  }
+
+  if (redirect.state) {
+    console.log("yes")
+    return <Navigate to={redirect.to} replace={true}/>
+  }
   return (
     <header class="site_header header_style_2">
       <div class="container">
@@ -7,8 +27,8 @@ export default function Header() {
             <div class="site_logo">
               <a class="site_link" href="/">
                 <img
-                  src="assets/images/logo/site_logo.png"
-                  alt="Education, Online Course, LMS Creative"
+                  src="/assets/images/logo/site_logo.png"
+                  alt="TOEICBox"
                 />
               </a>
             </div>
@@ -18,7 +38,7 @@ export default function Header() {
               <input type="search" name="search" placeholder="Recherche..." />
               <button type="submit">
                 <img
-                  src="assets/images/icons/icon_search.svg"
+                  src="/assets/images/icons/icon_search.svg"
                   alt="Icon Search"
                 />
               </button>
@@ -155,12 +175,24 @@ export default function Header() {
                     <i class="far fa-user"></i>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="pages_submenu">
+                    { user &&
+                    <div>
                     <li>
-                      <a href="">Mes tests</a>
+                      <a href="/user">Compte</a>
                     </li>
                     <li>
-                      <a href="">Compte</a>
+                      <a href="/user/profile">Profil</a>
                     </li>
+                    <li>
+                      <a href="" onClick={logout}>Logout</a>
+                    </li> 
+                    </div>
+                    }
+                    { !user &&
+                    <li>
+                      <a href="/login">Login</a>
+                      <a href="/signup">Signup</a>
+                    </li>}
                   </ul>
                 </li>
               </ul>

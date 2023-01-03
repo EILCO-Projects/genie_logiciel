@@ -16,7 +16,7 @@ export default function Home() {
               <div class="item_image">
                 <div class="image_wrap">
                   <img
-                    src="assets/images/meta/thumbnail_img_1.png"
+                    src="/assets/images/meta/thumbnail_img_1.png"
                     alt="Person Image"
                   />
                 </div>
@@ -25,7 +25,7 @@ export default function Home() {
                   data-parallax='{"rotateZ" : 180, "smoothness": 6}'
                 >
                   <img
-                    src="assets/images/shapes/dot_shape_7.png"
+                    src="/assets/images/shapes/dot_shape_7.png"
                     alt="Shape Image"
                   />
                 </div>
@@ -49,7 +49,7 @@ export default function Home() {
           class="deco_item deco_img_2"
           data-parallax='{"rotateZ" : 45, "smoothness": 6}'
         >
-          <img src="assets/images/shapes/shape_9.png" alt="Shape Image" />
+          <img src="/assets/images/shapes/shape_9.png" alt="Shape Image" />
         </div>
       </section>
 
@@ -65,13 +65,13 @@ export default function Home() {
                 <div class="item_image">
                   <div class="image_wrap">
                     <img
-                      src="assets/images/meta/thumbnail_img_2.png"
+                      src="/assets/images/meta/thumbnail_img_2.png"
                       alt="Person Image"
                     />
                   </div>
                   <div class="deco_item deco_img_1">
                     <img
-                      src="assets/images/shapes/shape_10.png"
+                      src="/assets/images/shapes/shape_10.png"
                       alt="Shape Image"
                     />
                   </div>
@@ -80,7 +80,7 @@ export default function Home() {
                     data-parallax='{"rotateZ" : 90, "smoothness": 6}'
                   >
                     <img
-                      src="assets/images/shapes/shape_11.png"
+                      src="/assets/images/shapes/shape_11.png"
                       alt="Shape Image"
                     />
                   </div>
@@ -109,13 +109,13 @@ export default function Home() {
               class="deco_item deco_img_3"
               data-parallax='{"scale" : 0.6, "smoothness": 6}'
             >
-              <img src="assets/images/shapes/shape_12.png" alt="Shape Image" />
+              <img src="/assets/images/shapes/shape_12.png" alt="Shape Image" />
             </div>
             <div
               class="deco_item deco_img_4"
               data-parallax='{"scale" : 0.6, "smoothness": 6}'
             >
-              <img src="assets/images/shapes/shape_13.png" alt="Shape Image" />
+              <img src="/assets/images/shapes/shape_13.png" alt="Shape Image" />
             </div>
           </div>
         </div>

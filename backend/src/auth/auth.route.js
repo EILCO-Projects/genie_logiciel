@@ -3,7 +3,7 @@ import  express  from 'express'
 
 const authRouter = express.Router()
 
-
+authRouter.post('/signup',authController.signup)
 authRouter.post('/login',authController.login)
 authRouter.post('/logout',authController.logout)
 

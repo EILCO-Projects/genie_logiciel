@@ -13,6 +13,8 @@ import dotenv from 'dotenv';
 import authRouter from "./src/auth/auth.route.js";
 import { ensureAuthantication } from "./src/auth/auth.middleware.js";
 import frontendRouter from "./src/routes/frontend.route.js"
+import vocabRouter from "./src/routes/vocab.route.js"
+import listVocabRouter from "./src/routes/vocablist.route.js"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -51,11 +53,13 @@ app.get("/protected", ensureAuthantication,(req,res)=>{
     res.send("You have access")
 })
 
-app.use('/auth/',authRouter)
 
+app.use('/auth/',authRouter)
 app.use('/api/users/',usersRouter)
 app.use('/api/tests/',testsRouter)
 app.use('/api/parties/',partiesRouter)
+app.use('/api/vocab/',vocabRouter)
+app.use('/api/listvocab/',listVocabRouter)
 
 //frontend
 app.use('/',frontendRouter)

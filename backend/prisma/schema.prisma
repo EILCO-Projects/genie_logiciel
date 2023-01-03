@@ -72,7 +72,7 @@ model Vocabulaire {
   id         Int             @id @default(autoincrement())
   mot        String
   traduction String
-  note       String
+  note       String?
   list       ListVocabulaire @relation(fields: [listId], references: [id])
   listId     Int
 }
